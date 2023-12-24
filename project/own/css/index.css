@@ -1,0 +1,131 @@
+body{
+	margin: 0; /*margin为外边距*/
+	padding: 0;  /*padding为内边距填充*/
+	background: url(../img/bg1.jpg) no-repeat;  
+	background-size: cover; /*cover确保尽可能填充整个背景*/
+}
+
+/*
+
+box用来调整中间那个黑色拥有透明度的背景
+宽度为380像素
+背景色为黑色rgba，alpha不透明度为0.4
+内边距为40像素
+黑色边框位置为居中
+margin-top表示距离上边距的距离
+color是文本颜色
+font-family表示用的什么字体
+
+*/
+.box{    
+	width: 380px;
+	background:rgba(0,255,0,0.2) ;
+	padding:40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: black;
+	font-family: "century gothic",sans-serif;
+}
+
+/*
+box中插入的第一张图像
+border-radius表示是圆形
+定义长宽为120像素，圆形半径为长宽的一半
+*/
+.box-img{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+
+/*
+对应垃圾分类的标题，离顶部10像素
+字体大小为30像素
+letter-spacing表示字符间的距离为4像素
+font-weight表示字体粗细为80
+*/
+.box h1{
+	margin-top:10px ;
+	font-size: 30px;
+	letter-spacing: 4px;
+	font-weight: 100;
+	
+}
+
+
+.box h6{
+	/*margin-top: 1px;*/
+	margin-top: -10px;
+	margin-bottom: 50px;
+	font-size: 15px;
+	font-weight: 60;
+	
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+.box li{
+	width: 300px;
+	height: 30px;
+   margin-bottom: 15px;
+	border: 2px solid #3F6580;
+	border-radius:24px ; /*圆角边框，圆形弧角为24像素*/
+	display: inline-block;/*水平排列*/
+	margin: 6px;
+	list-style: none;
+	/*padding-right: 20px;*/
+	text-align: center;
+	line-height: 30px;
+	
+}
+.box li a{
+	
+	
+	margin-top: 5px;
+	padding: 5px 15px 5px 15px;
+	color: red;
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 120;
+	font-family: "century gothic",sans-serif;
+	letter-spacing: 2px;
+}
+.box li:hover{
+	color: purple;
+	background: yellow;
+
+	/*background: #3F6580;*/
+	/*#2196F3*/
+
+	box-shadow: 0 0 10px #3F6580,0 0 40px #3F6580,0 0 80px #3F6580;
+	
+	/*box-shadow: 0 0 10px #3F6580;*/
+}
+
+.group {
+	color : rgba(170, 37, 126, 0.7);
+	text-align: center;
+	margin-top: 100px;
+	
+}
+
+.group li:first-child{
+	font-size : 20px;
+	letter-spacing: 2px;
+	font-family: SimSun, sans-serif;
+	font-weight: bold;
+	margin-bottom: 30px;
+	/* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+
+}
+
+.group li:nth-child(2) {
+    color: blue;
+	margin:20 30 20 30;
+    font-style: oblique; /*字体风格*/
+    
+}
